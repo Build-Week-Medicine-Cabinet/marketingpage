@@ -136,12 +136,7 @@ header nav {
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-<<<<<<< HEAD
-  border: 2px solid red;
-  width: 70%;
-=======
   width: 100%;
->>>>>>> 2e3670713dbeac22187e7fd7c7ba3b4026a22771
 }
 header nav .links a {
   margin: 5px;
@@ -150,8 +145,12 @@ header nav .links a {
 header nav .links a:not(:first-child) {
   border-left: 2px solid #0c486c;
 }
-header nav .links .nav-logo {
+header nav .nav-logo {
   height: 25px;
+}
+header .home-hero {
+  display: flex;
+  flex-direction: column;
 }
 html {
   font-size: 62.5%;
