@@ -136,18 +136,13 @@ header nav {
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid red;
-  width: 60%;
+  width: 100%;
 }
 header nav a {
   margin: 5px;
 }
 header nav .nav-logo {
   height: 30px;
-}
-header .home-hero {
-  background-image: url("images/git commihome-hero-image.jpg");
-  height: 25vh;
 }
 html {
   font-size: 62.5%;
