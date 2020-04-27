@@ -137,37 +137,52 @@ header nav {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  padding: 1.5rem;
 }
 header nav .links a {
   margin: 5px;
   text-decoration: none;
+  font-size: 1.8rem;
 }
 header nav .links a:not(:first-child) {
   border-left: 2px solid #0c486c;
 }
 header nav .nav-logo {
-  height: 25px;
+  height: 5rem;
 }
-header .home-hero {
+.home-hero {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  background-image: url(/images/home-hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: opacity(0.5);
+  padding: 15%;
 }
 html {
   font-size: 62.5%;
 }
 html body {
   font-size: 1.8rem;
+  font-family: 'Roboto Slab', sans-serrif;
 }
 html body h1,
 html body h2,
 html body h3,
 html body h4 {
   font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serrif;
 }
 html body .bigContainer {
   width: 85%;
   border: 1px solid red;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+html body .homeContainer {
+  width: 85%;
+  margin: 0 auto;
 }
