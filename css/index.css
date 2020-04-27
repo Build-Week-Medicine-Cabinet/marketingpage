@@ -136,12 +136,7 @@ header nav {
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-<<<<<<< HEAD
-  border: 2px solid red;
-  width: 70%;
-=======
   width: 100%;
->>>>>>> 2e3670713dbeac22187e7fd7c7ba3b4026a22771
 }
 header nav .links a {
   margin: 5px;
@@ -153,22 +148,56 @@ header nav .links a:not(:first-child) {
 header nav .links .nav-logo {
   height: 25px;
 }
+.bigContainer .aboutUs-main {
+  display: flex;
+  flex-flow: column wrap;
+  align-self: center;
+  margin: 2% 0 2% 0;
+  padding: 2%;
+  border: 1px solid blue;
+  width: 60%;
+}
+.bigContainer .aboutUs-main h1 {
+  display: flex;
+  align-self: center;
+  font-size: 5rem;
+  margin-bottom: 2%;
+}
+.bigContainer .aboutUs-main p {
+  line-height: 2.2rem;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaA.ttf) format('truetype');
+}
 html {
   font-size: 62.5%;
 }
 html body {
   font-size: 1.8rem;
+  font-family: 'Roboto Slab', sans-serrif;
 }
 html body h1,
 html body h2,
 html body h3,
 html body h4 {
   font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serrif;
 }
 html body .bigContainer {
   width: 85%;
   border: 1px solid red;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
 }
