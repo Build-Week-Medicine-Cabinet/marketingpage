@@ -137,13 +137,17 @@ header nav {
   justify-content: space-around;
   align-items: center;
   border: 2px solid red;
-  width: 60%;
+  width: 70%;
 }
-header nav a {
+header nav .links a {
   margin: 5px;
+  text-decoration: none;
 }
-header nav .nav-logo {
-  height: 30px;
+header nav .links a:not(:first-child) {
+  border-left: 2px solid #0c486c;
+}
+header nav .links .nav-logo {
+  height: 25px;
 }
 header .home-hero {
   background-image: url("images/git commihome-hero-image.jpg");
@@ -160,4 +164,11 @@ html body h2,
 html body h3,
 html body h4 {
   font-size: 2.5rem;
+}
+html body .bigContainer {
+  width: 85%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
