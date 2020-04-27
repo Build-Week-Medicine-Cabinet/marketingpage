@@ -136,6 +136,7 @@ header nav {
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 header nav a {
   margin: 5px;
