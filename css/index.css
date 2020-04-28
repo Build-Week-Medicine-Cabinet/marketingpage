@@ -197,7 +197,7 @@ header nav .links p {
   font-size: 4rem;
 }
 header nav .nav-logo {
-  height: 5rem;
+  height: 7rem;
 }
 .home-hero {
   display: flex;
@@ -370,6 +370,35 @@ header nav .nav-logo {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.forms .title {
+  margin: 1%;
+}
+.forms p {
+  margin: 3%;
+}
+.forms input {
+  margin: 5%;
+  color: #0c486c;
+}
+.forms input:hover {
+  background-color: #2d9c79;
+  color: white;
+  transition: 0.3s ease;
+}
+.forms button {
+  width: 200px;
+  padding: 1%;
+  font-family: 'Montserrat', sans-serrif;
+  color: white;
+  background-color: #1893a5;
+  border-radius: 20px;
+  margin-bottom: 3%;
+}
+.forms button:hover {
+  background-color: white;
+  color: #0c486c;
+  transition: 0.4s ease;
 }
 .strainsSection .sativa {
   display: flex;

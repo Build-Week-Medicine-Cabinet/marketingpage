@@ -5,5 +5,27 @@
     justify-content: center;
     text-align: center;
 
+    .title {
+        margin: 1%;
+    }
     
+    p {
+        margin: 3%;
+    }
+
+    input {
+        margin:5%;
+        color: @textColor;
+
+        &:hover {
+            background-color: @mainColor;
+            color: white;
+            transition: 0.3s ease;
+        }
+    }
+
+    button {
+        .buttonStyle(200px);
+        margin-bottom: 3%;
+    }
 }
