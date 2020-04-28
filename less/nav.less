@@ -8,7 +8,7 @@ header {
         nav {
             display: flex;
             flex-direction: row-reverse;
-            justify-content: space-between;
+            justify-content: space-around;
             flex-wrap: nowrap;
             align-items: center;
             width: 100%;
@@ -16,9 +16,9 @@ header {
 
             .links {
                 display: flex;
-                justify-content: end;
-                width: 100%;
-
+                justify-content: flex-end;
+                width: 50%;
+                
                 a {
                     margin: .5rem;
                     text-decoration: none;
@@ -34,9 +34,13 @@ header {
                 }
             }
 
-                a:not(:first-child){
-                    border-left: 2px solid @textColor;
-                }
+            p{
+                font-size: 4rem;
+            }
+
+                // a:not(:first-child){
+                //     border-left: 2px solid @textColor;
+                // }
         }
 
 
@@ -47,22 +51,3 @@ header {
     }
 
 }
-
-}
-
-
-        .nav-logo {
-            height: 50px;
-        }
-    }
-
-    .home-hero {
-        display: flex;
-        flex-direction: column;
-        
-        button {
-            .buttonStyle();
-        }
-    }
-}
-
