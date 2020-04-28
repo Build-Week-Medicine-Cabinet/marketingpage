@@ -382,7 +382,12 @@ header nav .nav-logo {
   color: #0c486c;
 }
 .forms input:hover {
-  background-color: #2d9c79;
+  background-color: #85b3a8;
+  color: white;
+  transition: 0.3s ease;
+}
+.forms input:focus {
+  background-color: #85b3a8;
   color: white;
   transition: 0.3s ease;
 }
