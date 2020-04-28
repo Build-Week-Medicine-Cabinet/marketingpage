@@ -145,7 +145,6 @@ html body h4 {
 }
 html body .bigContainer {
   width: 85%;
-  border: 1px solid blue;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
@@ -172,14 +171,15 @@ header nav {
   align-items: center;
   width: 100%;
   padding: 1.5rem;
+  border-bottom: 2px solid #ff999c;
 }
 header nav .links {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  width: 60%;
 }
 header nav .links a {
-  margin: 0.5rem;
+  margin: 0.6rem;
   text-decoration: none;
   font-size: 1.8rem;
   padding: 1%;
@@ -304,16 +304,13 @@ header nav .nav-logo {
   color: #0c486c;
   transition: 0.4s ease;
 }
-.bigContainer {
-  border: 1px solid blue;
-}
 .bigContainer .aboutUs-main {
   display: flex;
   flex-flow: column wrap;
   align-self: center;
   margin: 2% 0 2% 0;
   padding: 2%;
-  border: 1px solid blue;
+  border-bottom: 2px double #ff999c;
   width: 60%;
 }
 .bigContainer .aboutUs-main h1 {
@@ -323,7 +320,8 @@ header nav .nav-logo {
   margin-bottom: 2%;
 }
 .bigContainer .aboutUs-main p {
-  line-height: 2.2rem;
+  line-height: 2.8rem;
+  text-align: center;
 }
 .bigContainer .gallery {
   display: flex;
@@ -359,6 +357,11 @@ header nav .nav-logo {
   text-decoration: none;
   color: #0c486c;
 }
+.bigContainer .gallery .personShowcase p a:hover {
+  color: #ff999c;
+  text-decoration: underline;
+  transition: 0.3s ease;
+}
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -379,11 +382,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 13vh;
+  height: 16.5vh;
 }
 footer address {
   justify-content: center;
   align-items: center;
+  margin-top: 1%;
 }
 footer address p {
   text-align: center;
@@ -401,5 +405,8 @@ footer nav {
 footer nav a {
   text-decoration: none;
   color: white;
-  margin: 1%;
+  padding: 1%;
+}
+footer nav a:hover {
+  color: #000000;
 }
