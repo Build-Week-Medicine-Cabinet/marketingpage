@@ -1,11 +1,88 @@
+
+// Hero Image
 .home-hero {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     background-image: url(/images/home-hero-image.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top right;
     background-attachment: fixed;
-    backdrop-filter: opacity(0.5);
+    backdrop-filter: brightness(0.2);
     padding: 15%;
+
+    p {
+        margin: 5px;
+    }
+
+    button {
+        .buttonStyle();
+    } 
+}
+
+// Call to Action
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+
+    button {
+        .buttonStyle();
+    }
+
+    p {
+        margin: 1%;
+    }
+
+}
+
+// Our Team Section
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+
+
+    div {
+        width: 45%;
+        margin: 2%;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    button {
+        .buttonStyle();
+    }
+
+}
+
+.contact-intro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+
+
+    div {
+        width: 45%;
+        margin: 2%;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    button {
+        .buttonStyle();
+    }
+
 }
