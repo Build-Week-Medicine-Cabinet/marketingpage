@@ -197,7 +197,7 @@ header nav .links p {
   font-size: 4rem;
 }
 header nav .nav-logo {
-  height: 5rem;
+  height: 7rem;
 }
 .home-hero {
   display: flex;
@@ -364,6 +364,7 @@ header nav .nav-logo {
   text-decoration: underline;
   transition: 0.3s ease;
 }
+<<<<<<< HEAD
 .strains-hero {
   display: flex;
   flex-direction: column;
@@ -373,6 +374,43 @@ header nav .nav-logo {
 .strains-hero h1 {
   font-size: 4rem;
   margin-bottom: 2%;
+=======
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.forms .title {
+  margin: 1%;
+}
+.forms p {
+  margin: 3%;
+}
+.forms input {
+  margin: 5%;
+  color: #0c486c;
+}
+.forms input:hover {
+  background-color: #2d9c79;
+  color: white;
+  transition: 0.3s ease;
+}
+.forms button {
+  width: 200px;
+  padding: 1%;
+  font-family: 'Montserrat', sans-serrif;
+  color: white;
+  background-color: #1893a5;
+  border-radius: 20px;
+  margin-bottom: 3%;
+}
+.forms button:hover {
+  background-color: white;
+  color: #0c486c;
+  transition: 0.4s ease;
+>>>>>>> 23b7d4f2735e03390641fd6093c0f069e6d4fecb
 }
 .strainsSection .sativa {
   display: flex;
