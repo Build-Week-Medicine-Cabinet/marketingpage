@@ -364,10 +364,23 @@ header nav .nav-logo {
   text-decoration: underline;
   transition: 0.3s ease;
 }
+.strains-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 0 5% 0;
+}
+.strains-hero h1 {
+  font-size: 4rem;
+  margin-bottom: 2%;
+}
 .strainsSection .sativa {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.strainsSection .sativa .strainsTextSection p {
+  padding-right: 5%;
 }
 .strainsSection .indica {
   display: flex;
@@ -375,10 +388,19 @@ header nav .nav-logo {
   justify-content: center;
   align-items: center;
 }
+.strainsSection .indica .strainsTextSection h2 {
+  padding-left: 5%;
+}
+.strainsSection .indica .strainsTextSection p {
+  padding-left: 5%;
+}
 .strainsSection .hybrid {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.strainsSection .hybrid .strainsTextSection p {
+  padding-right: 5%;
 }
 @font-face {
   font-family: 'Montserrat';
