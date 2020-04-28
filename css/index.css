@@ -162,9 +162,11 @@ header nav .links a:hover {
 header nav .links a:not(:first-child) {
   border-left: 2px solid #0c486c;
 }
+
 header nav .nav-logo {
   height: 5rem;
 }
+
 .home-hero {
   display: flex;
   flex-direction: column;
@@ -179,6 +181,7 @@ header nav .nav-logo {
 }
 .home-hero p {
   margin: 5px;
+
 }
 .home-hero button {
   width: 15%;
@@ -193,6 +196,17 @@ header nav .nav-logo {
   color: #0c486c;
   transition: 0.4s ease;
 }
+
+}
+.home-hero button {
+  width: 5%;
+  padding: 2%;
+  font-family: 'Montserrat', sans-serrif;
+  color: #0c486c;
+  background-color: #1893a5;
+  border-radius: 3px;
+}
+
 .cta {
   display: flex;
   flex-direction: column;
@@ -200,6 +214,7 @@ header nav .nav-logo {
   margin: 2%;
 }
 .cta button {
+
   width: 15%;
   padding: 1%;
   font-family: 'Montserrat', sans-serrif;
@@ -211,6 +226,14 @@ header nav .nav-logo {
   background-color: white;
   color: #0c486c;
   transition: 0.4s ease;
+
+  width: 5%;
+  padding: 2%;
+  font-family: 'Montserrat', sans-serrif;
+  color: #0c486c;
+  background-color: #1893a5;
+  border-radius: 3px;
+
 }
 .cta p {
   margin: 1%;
@@ -230,6 +253,7 @@ header nav .nav-logo {
   margin: 20px 0;
 }
 .about button {
+
   width: 15%;
   padding: 1%;
   font-family: 'Montserrat', sans-serrif;
@@ -241,6 +265,14 @@ header nav .nav-logo {
   background-color: white;
   color: #0c486c;
   transition: 0.4s ease;
+
+  width: 5%;
+  padding: 2%;
+  font-family: 'Montserrat', sans-serrif;
+  color: #0c486c;
+  background-color: #1893a5;
+  border-radius: 3px;
+
 }
 .contact-intro {
   display: flex;
@@ -258,6 +290,7 @@ header nav .nav-logo {
   margin: 20px 0;
 }
 .contact-intro button {
+
   width: 15%;
   padding: 1%;
   font-family: 'Montserrat', sans-serrif;
@@ -269,6 +302,46 @@ header nav .nav-logo {
   background-color: white;
   color: #0c486c;
   transition: 0.4s ease;
+
+  width: 5%;
+  padding: 2%;
+  font-family: 'Montserrat', sans-serrif;
+  color: #0c486c;
+  background-color: #1893a5;
+  border-radius: 3px;
+}
+.bigContainer .aboutUs-main {
+  display: flex;
+  flex-flow: column wrap;
+  align-self: center;
+  margin: 2% 0 2% 0;
+  padding: 2%;
+  border: 1px solid blue;
+  width: 60%;
+}
+.bigContainer .aboutUs-main h1 {
+  display: flex;
+  align-self: center;
+  font-size: 5rem;
+  margin-bottom: 2%;
+}
+.bigContainer .aboutUs-main p {
+  line-height: 2.2rem;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaA.ttf) format('truetype');
+
 }
 html {
   font-size: 62.5%;
