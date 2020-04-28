@@ -1,8 +1,14 @@
-.buttonStyle(@width: 5%, ) {
+.buttonStyle(@width:15%, ) {
     width: @width;
-    padding: 2%;
+    padding: 1%;
     font-family: @headerFont;
-    color: @textColor;
+    color: white;
     background-color: @accentColor2;
-    border-radius: 3px;
+    border-radius: 20px;
+
+       &:hover {
+            background-color: white;
+            color: @textColor;
+            transition: 0.4s ease;
+        }
 }
