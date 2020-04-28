@@ -126,6 +126,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html body {
+  font-size: 1.8rem;
+  font-family: 'Roboto Slab', sans-serrif;
+}
+html body h1,
+html body h2,
+html body h3,
+html body h4 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serrif;
+}
+html body .bigContainer {
+  width: 85%;
+  border: 1px solid blue;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -137,18 +159,33 @@ header nav {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  padding: 1.5rem;
 }
 header nav .links a {
-  margin: 5px;
+  margin: 0.5rem;
   text-decoration: none;
 }
 header nav .links a:not(:first-child) {
   border-left: 2px solid #0c486c;
 }
 header nav .nav-logo {
-  height: 25px;
+  height: 50px;
 }
-<<<<<<< HEAD
+header .home-hero {
+  display: flex;
+  flex-direction: column;
+}
+header .home-hero button {
+  width: 5%;
+  padding: 2%;
+  font-family: 'Montserrat', sans-serrif;
+  color: #0c486c;
+  background-color: #1893a5;
+  border-radius: 3px;
+}
+.bigContainer {
+  border: 1px solid blue;
+}
 .bigContainer .aboutUs-main {
   display: flex;
   flex-flow: column wrap;
@@ -167,6 +204,40 @@ header nav .nav-logo {
 .bigContainer .aboutUs-main p {
   line-height: 2.2rem;
 }
+.bigContainer .gallery {
+  display: flex;
+  flex-flow: row wrap;
+}
+.bigContainer .gallery .personShowcase {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 0 1% 0;
+  flex-grow: initial;
+  justify-content: stretch;
+}
+.bigContainer .gallery .personShowcase img {
+  width: 20rem;
+  border-radius: 50%;
+}
+.bigContainer .gallery .personShowcase h3 {
+  text-align: center;
+  margin: 2% 0 2% 0;
+}
+.bigContainer .gallery .personShowcase p {
+  width: 45%;
+  line-height: 2.2rem;
+  padding: 1%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.bigContainer .gallery .personShowcase p a {
+  text-decoration: none;
+  color: #0c486c;
+}
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -180,30 +251,33 @@ header nav .nav-logo {
   font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaA.ttf) format('truetype');
-=======
-header .home-hero {
+}
+footer {
+  background-color: #28ad07;
   display: flex;
   flex-direction: column;
->>>>>>> ada66acee0abe801bd4a9ac81b1674aafdf62241
+  justify-content: center;
+  align-items: center;
+  height: 13vh;
 }
-html {
-  font-size: 62.5%;
+footer address {
+  justify-content: center;
+  align-items: center;
 }
-html body {
-  font-size: 1.8rem;
-  font-family: 'Roboto Slab', sans-serrif;
+footer address p {
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 2%;
+  margin-top: 1%;
 }
-html body h1,
-html body h2,
-html body h3,
-html body h4 {
-  font-size: 2.5rem;
-  font-family: 'Montserrat', sans-serrif;
-}
-html body .bigContainer {
-  width: 85%;
-  border: 1px solid red;
+footer nav {
+  margin: 1%;
   display: flex;
-  margin: 0 auto;
-  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+footer nav a {
+  text-decoration: none;
+  color: white;
+  margin: 1%;
 }
