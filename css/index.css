@@ -208,6 +208,8 @@ header nav .nav-logo {
   background-attachment: fixed;
   backdrop-filter: brightness(0.2);
   padding: 15%;
+  line-height: 2.3rem;
+  color: black;
 }
 .home-hero p {
   margin: 5px;
