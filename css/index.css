@@ -176,6 +176,61 @@ header .home-hero {
   flex-direction: column;
 }
 header .home-hero button {
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-image: url(/images/home-hero-image.jpg);
+  background-size: cover;
+  background-position: top right;
+  background-attachment: fixed;
+  backdrop-filter: brightness(0.2);
+  padding: 15%;
+}
+.home-hero p {
+  margin: 5px;
+}
+.home-hero button {
+  width: 5%;
+  padding: 2%;
+  font-family: 'Montserrat', sans-serrif;
+  color: #0c486c;
+  background-color: #1893a5;
+  border-radius: 3px;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+}
+.cta button {
+  width: 5%;
+  padding: 2%;
+  font-family: 'Montserrat', sans-serrif;
+  color: #0c486c;
+  background-color: #1893a5;
+  border-radius: 3px;
+}
+.cta p {
+  margin: 1%;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+.about div {
+  width: 45%;
+  margin: 2%;
+}
+.about p {
+  margin: 20px 0;
+}
+.about button {
   width: 5%;
   padding: 2%;
   font-family: 'Montserrat', sans-serrif;
@@ -185,6 +240,28 @@ header .home-hero button {
 }
 .bigContainer {
   border: 1px solid blue;
+.contact-intro {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+.contact-intro div {
+  width: 45%;
+  margin: 2%;
+}
+.contact-intro p {
+  margin: 20px 0;
+}
+.contact-intro button {
+  width: 5%;
+  padding: 2%;
+  font-family: 'Montserrat', sans-serrif;
+  color: #0c486c;
+  background-color: #1893a5;
+  border-radius: 3px;
 }
 .bigContainer .aboutUs-main {
   display: flex;
@@ -269,6 +346,21 @@ footer address p {
   font-size: 1.6rem;
   padding-top: 2%;
   margin-top: 1%;
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-size: 1.8rem;
+  font-family: 'Roboto Slab', sans-serrif;
+  color: #0c486c;
+}
+html body h1,
+html body h2,
+html body h3,
+html body h4 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serrif;
+  color: #28ad07;
 }
 footer nav {
   margin: 1%;
@@ -280,4 +372,12 @@ footer nav a {
   text-decoration: none;
   color: white;
   margin: 1%;
+}
+html body .homeContainer {
+  width: 85%;
+  margin: 0 auto;
+}
+html body .homeContainer img {
+  height: 500px;
+  border-radius: 15%;
 }
