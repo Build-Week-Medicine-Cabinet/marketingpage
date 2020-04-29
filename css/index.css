@@ -175,6 +175,19 @@ header nav {
   padding: 1.5rem;
   border-bottom: 2px solid #ff999c;
 }
+@media ((max-width: 1010px)) {
+  header nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    padding-top: 115px;
+    margin-top: -130px;
+    border: none;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
 header nav .links {
   display: flex;
   justify-content: flex-end;
@@ -189,7 +202,7 @@ header nav .links a {
   display: inline-block;
 }
 header nav .links a:hover {
-  color: #1893a5;
+  color: #ff999c;
   transform: translate(0, -8px);
   transition: 0.3s ease;
 }
@@ -212,6 +225,11 @@ header nav .nav-logo {
   padding: 15%;
   line-height: 2.3rem;
   color: black;
+}
+.home-hero h1 {
+  background: rgba(112, 143, 153, 0.3);
+  border-radius: 10%;
+  padding: 2%;
 }
 .home-hero p {
   margin: 5px;
@@ -251,6 +269,11 @@ header nav .nav-logo {
 .cta p {
   margin: 1%;
 }
+@media ((max-width: 1010px)) {
+  .cta p {
+    text-align: center;
+  }
+}
 .about {
   display: flex;
   justify-content: center;
@@ -258,12 +281,40 @@ header nav .nav-logo {
   align-items: center;
   margin: 0 auto;
 }
+@media ((max-width: 1010px)) {
+  .about {
+    flex-direction: column;
+  }
+}
 .about div {
   width: 45%;
   margin: 2%;
 }
-.about p {
+@media ((max-width: 1010px)) {
+  .about div {
+    width: 70%;
+  }
+}
+.about p,
+.about h2 {
   margin: 20px 0;
+}
+@media ((max-width: 1255px)) {
+  .about p,
+  .about h2 {
+    margin-right: 20%;
+  }
+}
+@media ((max-width: 1010px)) {
+  .about p,
+  .about h2 {
+    margin: 0;
+    text-align: center;
+  }
+}
+.about .aboutImage {
+  display: flex;
+  justify-content: center;
 }
 .about button {
   width: 15%;
@@ -272,11 +323,17 @@ header nav .nav-logo {
   color: white;
   background-color: #1893a5;
   border-radius: 20px;
+  margin-top: 10px;
 }
 .about button:hover {
   background-color: white;
   color: #0c486c;
   transition: 0.4s ease;
+}
+@media ((max-width: 1255px)) {
+  .about button {
+    width: 20%;
+  }
 }
 .contact-intro {
   display: flex;
@@ -286,12 +343,40 @@ header nav .nav-logo {
   align-items: center;
   margin: 0 auto;
 }
+@media ((max-width: 1010px)) {
+  .contact-intro {
+    flex-direction: column;
+  }
+}
 .contact-intro div {
   width: 45%;
   margin: 2%;
 }
-.contact-intro p {
-  margin: 20px 0;
+@media ((max-width: 1010px)) {
+  .contact-intro div {
+    width: 70%;
+  }
+}
+.contact-intro p,
+.contact-intro h2 {
+  margin: 20px;
+}
+@media ((max-width: 1255px)) {
+  .contact-intro p,
+  .contact-intro h2 {
+    margin-left: 20%;
+  }
+}
+@media ((max-width: 1010px)) {
+  .contact-intro p,
+  .contact-intro h2 {
+    margin: 0;
+    text-align: center;
+  }
+}
+.contact-intro .contactImage {
+  display: flex;
+  justify-content: center;
 }
 .contact-intro button {
   width: 15%;
@@ -300,11 +385,17 @@ header nav .nav-logo {
   color: white;
   background-color: #1893a5;
   border-radius: 20px;
+  margin-top: 10px;
 }
 .contact-intro button:hover {
   background-color: white;
   color: #0c486c;
   transition: 0.4s ease;
+}
+@media ((max-width: 1255px)) {
+  .contact-intro button {
+    width: 20%;
+  }
 }
 .bigContainer .aboutUs-main {
   display: flex;
@@ -370,6 +461,12 @@ header nav .nav-logo {
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 75vh;
+}
+@media ((max-width: 1010px)) {
+  .forms {
+    height: 90vh;
+  }
 }
 .forms .title {
   margin: 1%;

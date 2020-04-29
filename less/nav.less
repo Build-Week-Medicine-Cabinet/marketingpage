@@ -4,7 +4,6 @@ header {
     flex-direction: column;
     align-items: center;
 
-
         nav {
             display: flex;
             flex-direction: row-reverse;
@@ -14,7 +13,18 @@ header {
             width: 100%;
             padding: 1.5rem;
             border-bottom: 2px solid @accentColor;
-            
+
+            @media(@tabletBP) {
+                position: fixed;
+                top: 0;
+                z-index: 1;
+                background-color: white;
+                padding-top: 115px;
+                margin-top: -130px;
+                border: none;
+                -webkit-background-clip: content-box;
+                background-clip: content-box;
+            }
 
             .links {
                 display: flex;
@@ -30,7 +40,7 @@ header {
                     display: inline-block;
                     
                 &:hover {
-                    color: @accentColor2;
+                    color: @accentColor;
                     transform: translate(0, -8px);
                     transition: 0.3s ease;
                 }
@@ -39,17 +49,15 @@ header {
             p{
                 font-size: 4rem;
             }
-
-                // a:not(:first-child){
-                //     border-left: 2px solid @textColor;
-                // }
         }
-
 
         .nav-logo {
             height: 7rem;
         }
 
-    }
+        // .main-logo {
+        //     top: -20%;
+        // }
 
+    }
 }
