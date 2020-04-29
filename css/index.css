@@ -286,8 +286,18 @@ header nav .links a {
 }
 @media ((max-width: 800px)) {
   header nav .links a {
-    color: #2d9c79;
-    text-decoration: underline;
+    width: 15%;
+    padding: 1%;
+    font-family: 'Montserrat', sans-serrif;
+    color: white;
+    background-color: #1893a5;
+    border-radius: 20px;
+    text-align: center;
+  }
+  header nav .links a:hover {
+    background-color: white;
+    color: #0c486c;
+    transition: 0.4s ease;
   }
 }
 header nav .links a:hover {
@@ -318,7 +328,7 @@ header nav .nav-logo {
   align-items: center;
   background-image: url(/images/home-hero-image.jpg);
   background-size: cover;
-  background-position: top right;
+  background-position: center;
   background-attachment: fixed;
   backdrop-filter: brightness(0.2);
   padding: 15%;
