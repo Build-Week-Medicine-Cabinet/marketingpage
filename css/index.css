@@ -187,7 +187,6 @@ header nav {
     padding-top: 115px;
     margin-top: -130px;
     border: none;
-    -webkit-background-clip: content-box;
     background-clip: content-box;
   }
 }
@@ -198,10 +197,10 @@ header nav .links {
 }
 @media ((max-width: 800px)) {
   header nav .links {
-    display: block;
+    display: inline-block;
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: 3px;
+    left: 55%;
     z-index: 1;
   }
 }
@@ -222,17 +221,18 @@ header nav .links input {
   }
   header nav .links input:checked ~ span {
     opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
+    transform: rotate(-45deg) translate(-2px, -1px);
     background-color: #ff999c;
   }
   header nav .links input:checked ~ span:nth-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
+    transform-origin: center;
   }
   header nav .links input:checked ~ span:nth-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(45deg) translate(0, -1px);
   }
-  header nav .links input:checked ~ a {
+  header nav .links input:checked ~ .buttons {
     transform: none;
   }
 }
@@ -263,16 +263,17 @@ header nav .links .buttons {
 }
 @media ((max-width: 800px)) {
   header nav .links .buttons {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    width: 300px;
-    margin: -100px 0 0 55px;
+    width: 100vw;
+    margin: -100px 0 0 -164%;
     padding: 50px;
     padding-top: 125px;
     background: #85b3a8;
-    transform-origin: 0% 0%;
     transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 }
 header nav .links a {
@@ -333,7 +334,7 @@ header nav .nav-logo {
   margin: 5px;
 }
 .home-hero button {
-  width: 15%;
+  width: 20%;
   padding: 1%;
   font-family: 'Montserrat', sans-serrif;
   color: white;
