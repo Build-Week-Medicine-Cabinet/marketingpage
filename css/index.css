@@ -162,6 +162,20 @@ html body .homeContainer img {
   height: 500px;
   border-radius: 15%;
 }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaA.ttf) format('truetype');
+}
 header {
   display: flex;
   flex-wrap: nowrap;
@@ -279,7 +293,7 @@ header nav .links a {
   margin: 0.6rem;
   text-decoration: none;
   font-size: 1.8rem;
-  padding: 1%;
+  padding: 0 1%;
   color: #2d9c79;
   display: inline-block;
 }
@@ -605,7 +619,19 @@ header nav .nav-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2% 0 5% 0;
+  margin: 2% 0 3% 0;
+}
+@media (max-width: 1255px) {
+  .strains-hero {
+    margin-top: 2%;
+    padding-top: 3%;
+  }
+}
+@media (max-width: 800px) {
+  .strains-hero {
+    margin-top: 4%;
+    padding-top: 3%;
+  }
 }
 .strains-hero h1 {
   font-size: 4rem;
@@ -621,7 +647,7 @@ header nav .nav-logo {
     font-size: 6rem;
     align-items: center;
     text-align: center;
-    margin: 2% 0 2% 0;
+    margin: 2% 0 0 0;
   }
 }
 .strainsSection .sativa {
@@ -638,12 +664,18 @@ header nav .nav-logo {
 .strainsSection .sativa .strainsTextSection h2 {
   margin-bottom: 1%;
 }
+@media (max-width: 1255px) {
+  .strainsSection .sativa .strainsTextSection h2 {
+    margin-top: 5%;
+    text-align: center;
+  }
+}
 .strainsSection .sativa .strainsTextSection p {
   padding-right: 5%;
 }
 @media (max-width: 1255px) {
   .strainsSection .sativa .strainsTextSection p {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
   }
 }
 .strainsSection .sativa img {
@@ -652,7 +684,7 @@ header nav .nav-logo {
 }
 @media (max-width: 1255px) {
   .strainsSection .sativa img {
-    width: 30rem;
+    width: 45rem;
   }
 }
 .strainsSection .indica {
@@ -664,7 +696,11 @@ header nav .nav-logo {
 @media (max-width: 1255px) {
   .strainsSection .indica {
     flex-direction: column;
+    margin-bottom: 2%;
   }
+}
+.strainsSection .indica .strainsTextSection {
+  margin-top: 2%;
 }
 .strainsSection .indica .strainsTextSection h2 {
   padding-left: 5%;
@@ -673,6 +709,8 @@ header nav .nav-logo {
 @media (max-width: 1255px) {
   .strainsSection .indica .strainsTextSection h2 {
     padding: 0;
+    margin-top: 5%;
+    text-align: center;
   }
 }
 .strainsSection .indica .strainsTextSection p {
@@ -681,6 +719,7 @@ header nav .nav-logo {
 @media (max-width: 1255px) {
   .strainsSection .indica .strainsTextSection p {
     padding: 0;
+    margin-bottom: 3%;
   }
 }
 .strainsSection .indica img {
@@ -689,7 +728,8 @@ header nav .nav-logo {
 }
 @media (max-width: 1255px) {
   .strainsSection .indica img {
-    width: 30rem;
+    width: 45rem;
+    margin-bottom: 3%;
   }
 }
 .strainsSection .hybrid {
@@ -703,11 +743,26 @@ header nav .nav-logo {
     flex-direction: column;
   }
 }
+.strainsSection .hybrid .strainsTextSection {
+  margin-top: 2%;
+}
 .strainsSection .hybrid .strainsTextSection h2 {
   margin-bottom: 1%;
 }
+@media (max-width: 1255px) {
+  .strainsSection .hybrid .strainsTextSection h2 {
+    margin-top: 5%;
+    text-align: center;
+  }
+}
 .strainsSection .hybrid .strainsTextSection p {
   padding-right: 5%;
+}
+@media (max-width: 1255px) {
+  .strainsSection .hybrid .strainsTextSection p {
+    margin-bottom: 3%;
+    text-align: center;
+  }
 }
 .strainsSection .hybrid img {
   width: 60rem;
@@ -715,22 +770,9 @@ header nav .nav-logo {
 }
 @media (max-width: 1255px) {
   .strainsSection .hybrid img {
-    width: 30rem;
+    width: 45rem;
+    margin-bottom: 3%;
   }
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF7g4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaA.ttf) format('truetype');
 }
 footer {
   background-color: #2d9c79;
