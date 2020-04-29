@@ -145,6 +145,9 @@ html body h4 {
   font-family: 'Montserrat', sans-serrif;
   color: #2d9c79;
 }
+html body p {
+  line-height: 2.5rem;
+}
 html body .bigContainer {
   width: 85%;
   display: flex;
@@ -187,6 +190,7 @@ header nav .links a {
   padding: 1%;
   color: #2d9c79;
   display: inline-block;
+  white-space: nowrap;
 }
 header nav .links a:hover {
   color: #1893a5;
@@ -195,9 +199,10 @@ header nav .links a:hover {
 }
 header nav .links p {
   font-size: 4rem;
+  align-self: center;
 }
 header nav .nav-logo {
-  height: 5rem;
+  height: 7rem;
 }
 .home-hero {
   display: flex;
@@ -328,6 +333,7 @@ header nav .nav-logo {
 .bigContainer .gallery {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 .bigContainer .gallery .personShowcase {
   display: flex;
@@ -363,6 +369,42 @@ header nav .nav-logo {
   color: #ff999c;
   text-decoration: underline;
   transition: 0.3s ease;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.forms .title {
+  margin: 1%;
+}
+.forms p {
+  margin: 3%;
+}
+.forms input {
+  margin: 5%;
+  color: #0c486c;
+}
+.forms input:hover {
+  background-color: #2d9c79;
+  color: white;
+  transition: 0.3s ease;
+}
+.forms button {
+  width: 200px;
+  padding: 1%;
+  font-family: 'Montserrat', sans-serrif;
+  color: white;
+  background-color: #1893a5;
+  border-radius: 20px;
+  margin-bottom: 3%;
+}
+.forms button:hover {
+  background-color: white;
+  color: #0c486c;
+  transition: 0.4s ease;
 }
 .strains-hero {
   display: flex;
