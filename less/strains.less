@@ -11,20 +11,49 @@
 
 }
 
+.mdash {
+    display: none;
 
+    @media @tablet{
+        display: flex;
+        justify-content: center;
+        font-size: 6rem;
+        align-items: center;
+        text-align: center;
+        margin: 2% 0 2% 0;
+    }
+}
 .strainsSection{
-
+    
+    
     .sativa{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media @tablet{
+            flex-direction: column;
+            margin-bottom: 2%;
+        }
         
         .strainsTextSection {
             h2 {
-                
+                margin-bottom: 1%;
             }
             p{
                 padding-right: 5%;
+
+                @media @tablet{
+                    margin-bottom: 5%;
+                }
+            }
+        }
+        img{
+            width: 60rem;
+            height: auto;
+
+            @media @tablet {
+               width: 30rem;
             }
         }
     }
@@ -35,13 +64,34 @@
         justify-content: center;
         align-items: center;
 
+        @media @tablet{
+            flex-direction: column;
+        }
+
         .strainsTextSection {
             h2 {
                 padding-left: 5%;
+                margin-bottom: 1%;
+
+                @media @tablet{
+                    padding: 0;
+                }
             }
             p{
                 padding-left: 5%;
+
+                @media @tablet{
+                    padding: 0;
+                }
             }
+        }
+        img{
+            width: 60rem;
+            height: auto;
+
+            @media @tablet {
+                width: 30rem;
+             }
         }
 
     }
@@ -50,14 +100,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 3%;
+
+        @media @tablet{
+            flex-direction: column;
+        }
 
         .strainsTextSection {
             h2 {
-                
+                margin-bottom: 1%;
             }
             p{
                 padding-right: 5%;
             }
+        }
+
+        img{
+            width: 60rem;
+            height: auto;
+
+            @media @tablet {
+                width: 30rem;
+             }
         }
     }
 }

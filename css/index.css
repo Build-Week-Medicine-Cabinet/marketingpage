@@ -184,13 +184,14 @@ header nav .links {
   width: 60%;
 }
 header nav .links a {
-  margin: 0.6rem;
+  margin: 0.6rem 1%;
   text-decoration: none;
   font-size: 1.8rem;
-  padding: 1%;
+  padding: 0 auto;
   color: #2d9c79;
   display: inline-block;
   white-space: nowrap;
+  width: 5%;
 }
 header nav .links a:hover {
   color: #1893a5;
@@ -416,13 +417,49 @@ header nav .nav-logo {
   font-size: 4rem;
   margin-bottom: 2%;
 }
+.mdash {
+  display: none;
+}
+@media (max-width: 800px) {
+  .mdash {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    align-items: center;
+    text-align: center;
+    margin: 2% 0 2% 0;
+  }
+}
 .strainsSection .sativa {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .strainsSection .sativa {
+    flex-direction: column;
+    margin-bottom: 2%;
+  }
+}
+.strainsSection .sativa .strainsTextSection h2 {
+  margin-bottom: 1%;
+}
 .strainsSection .sativa .strainsTextSection p {
   padding-right: 5%;
+}
+@media (max-width: 800px) {
+  .strainsSection .sativa .strainsTextSection p {
+    margin-bottom: 5%;
+  }
+}
+.strainsSection .sativa img {
+  width: 60rem;
+  height: auto;
+}
+@media (max-width: 800px) {
+  .strainsSection .sativa img {
+    width: 30rem;
+  }
 }
 .strainsSection .indica {
   display: flex;
@@ -430,19 +467,62 @@ header nav .nav-logo {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .strainsSection .indica {
+    flex-direction: column;
+  }
+}
 .strainsSection .indica .strainsTextSection h2 {
   padding-left: 5%;
+  margin-bottom: 1%;
+}
+@media (max-width: 800px) {
+  .strainsSection .indica .strainsTextSection h2 {
+    padding: 0;
+  }
 }
 .strainsSection .indica .strainsTextSection p {
   padding-left: 5%;
+}
+@media (max-width: 800px) {
+  .strainsSection .indica .strainsTextSection p {
+    padding: 0;
+  }
+}
+.strainsSection .indica img {
+  width: 60rem;
+  height: auto;
+}
+@media (max-width: 800px) {
+  .strainsSection .indica img {
+    width: 30rem;
+  }
 }
 .strainsSection .hybrid {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3%;
+}
+@media (max-width: 800px) {
+  .strainsSection .hybrid {
+    flex-direction: column;
+  }
+}
+.strainsSection .hybrid .strainsTextSection h2 {
+  margin-bottom: 1%;
 }
 .strainsSection .hybrid .strainsTextSection p {
   padding-right: 5%;
+}
+.strainsSection .hybrid img {
+  width: 60rem;
+  height: auto;
+}
+@media (max-width: 800px) {
+  .strainsSection .hybrid img {
+    width: 30rem;
+  }
 }
 @font-face {
   font-family: 'Montserrat';
