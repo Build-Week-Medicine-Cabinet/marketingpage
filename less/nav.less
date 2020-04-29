@@ -113,7 +113,7 @@ header {
                         margin: -100px 0 0 -164%;
                         padding: 50px;
                         padding-top: 125px;
-                        background: #85b3a8;
+                        background: linear-gradient(0deg, rgba(163,190,179,1) 0%, rgba(255,255,255,1) 100%);
                         transform: translate(100%, 0);
                         transition: transform 0.8s cubic-bezier(0.77,0.2,0.05,1.0);
                     }
@@ -128,7 +128,7 @@ header {
                     display: inline-block;
 
                         @media(@hamburgerMenu) {
-                            color: black;
+                            color: @mainColor;
                             text-decoration: underline;
                         }
                         
@@ -138,7 +138,7 @@ header {
                         transition: 0.3s ease;
 
                         @media(@hamburgerMenu) {
-                            color: white;
+                            color: @accentColor;
                         }
                     }
             }

@@ -271,7 +271,7 @@ header nav .links .buttons {
     margin: -100px 0 0 -164%;
     padding: 50px;
     padding-top: 125px;
-    background: #85b3a8;
+    background: linear-gradient(0deg, #a3beb3 0%, #ffffff 100%);
     transform: translate(100%, 0);
     transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
@@ -286,7 +286,7 @@ header nav .links a {
 }
 @media ((max-width: 800px)) {
   header nav .links a {
-    color: black;
+    color: #2d9c79;
     text-decoration: underline;
   }
 }
@@ -297,7 +297,7 @@ header nav .links a:hover {
 }
 @media ((max-width: 800px)) {
   header nav .links a:hover {
-    color: white;
+    color: #ff999c;
   }
 }
 header nav .links p {
