@@ -201,7 +201,6 @@ header nav {
     padding-top: 115px;
     margin-top: -130px;
     border: none;
-    -webkit-background-clip: content-box;
     background-clip: content-box;
   }
 }
@@ -212,10 +211,10 @@ header nav .links {
 }
 @media ((max-width: 800px)) {
   header nav .links {
-    display: block;
+    display: inline-block;
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: 3px;
+    left: 55%;
     z-index: 1;
   }
 }
@@ -236,17 +235,18 @@ header nav .links input {
   }
   header nav .links input:checked ~ span {
     opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
+    transform: rotate(-45deg) translate(-2px, -1px);
     background-color: #ff999c;
   }
   header nav .links input:checked ~ span:nth-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
+    transform-origin: center;
   }
   header nav .links input:checked ~ span:nth-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(45deg) translate(0, -1px);
   }
-  header nav .links input:checked ~ a {
+  header nav .links input:checked ~ .buttons {
     transform: none;
   }
 }
@@ -277,16 +277,17 @@ header nav .links .buttons {
 }
 @media ((max-width: 800px)) {
   header nav .links .buttons {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    width: 300px;
-    margin: -100px 0 0 55px;
+    width: 100vw;
+    margin: -100px 0 0 -164%;
     padding: 50px;
     padding-top: 125px;
-    background: #85b3a8;
-    transform-origin: 0% 0%;
+    background: linear-gradient(0deg, #a3beb3 0%, #ffffff 100%);
     transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 }
 header nav .links a {
@@ -299,8 +300,18 @@ header nav .links a {
 }
 @media ((max-width: 800px)) {
   header nav .links a {
-    color: black;
-    text-decoration: underline;
+    width: 15%;
+    padding: 1%;
+    font-family: 'Montserrat', sans-serrif;
+    color: white;
+    background-color: #1893a5;
+    border-radius: 20px;
+    text-align: center;
+  }
+  header nav .links a:hover {
+    background-color: white;
+    color: #0c486c;
+    transition: 0.4s ease;
   }
 }
 header nav .links a:hover {
@@ -310,7 +321,7 @@ header nav .links a:hover {
 }
 @media ((max-width: 800px)) {
   header nav .links a:hover {
-    color: white;
+    color: #ff999c;
   }
 }
 header nav .links p {
@@ -331,7 +342,7 @@ header nav .nav-logo {
   align-items: center;
   background-image: url(/images/home-hero-image.jpg);
   background-size: cover;
-  background-position: top right;
+  background-position: center;
   background-attachment: fixed;
   backdrop-filter: brightness(0.2);
   padding: 15%;
@@ -347,7 +358,7 @@ header nav .nav-logo {
   margin: 5px;
 }
 .home-hero button {
-  width: 15%;
+  width: 20%;
   padding: 1%;
   font-family: 'Montserrat', sans-serrif;
   color: white;
@@ -532,6 +543,7 @@ header nav .nav-logo {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin: 2% 0;
 }
 .bigContainer .gallery .personShowcase {
   display: flex;
@@ -547,6 +559,11 @@ header nav .nav-logo {
   width: 20rem;
   border-radius: 50%;
 }
+@media (max-width: 1255px) {
+  .bigContainer .gallery .personShowcase img {
+    width: 15rem;
+  }
+}
 .bigContainer .gallery .personShowcase h3 {
   text-align: center;
   margin: 2% 0 2% 0;
@@ -558,6 +575,12 @@ header nav .nav-logo {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+@media (max-width: 1255px) {
+  .bigContainer .gallery .personShowcase p {
+    width: 50%;
+    font-size: 1.5rem;
+  }
 }
 .bigContainer .gallery .personShowcase p a {
   text-decoration: none;
@@ -634,7 +657,7 @@ header nav .nav-logo {
   }
 }
 .strains-hero h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 2%;
 }
 .mdash {

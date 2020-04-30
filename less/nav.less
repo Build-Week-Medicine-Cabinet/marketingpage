@@ -22,7 +22,6 @@ header {
                 padding-top: 115px;
                 margin-top: -130px;
                 border: none;
-                -webkit-background-clip: content-box;
                 background-clip: content-box;
             }
 
@@ -32,10 +31,10 @@ header {
                 width: 60%;
 
                 @media(@hamburgerMenu) {
-                    display: block;
+                    display: inline-block;
                     position: relative;
-                    top: 50px;
-                    left: 50px;
+                    top: 3px;
+                    left: 55%;
                     z-index: 1;
                 }
                 
@@ -55,20 +54,21 @@ header {
 
                         &:checked ~ span {
                             opacity: 1;
-                            transform: rotate(45deg) translate(-2px, -1px);
+                            transform: rotate(-45deg) translate(-2px, -1px);
                             background-color: @accentColor;
                         }
 
                         &:checked ~ span:nth-child(3) {
                             opacity: 0;
                             transform: rotate(0deg) scale(0.2, 0.2);
+                            transform-origin: center;
                         }
 
                         &:checked ~ span:nth-child(2) {
-                            transform: rotate(-45deg) translate(0, -1px);
+                            transform: rotate(45deg) translate(0, -1px);
                         }
 
-                        &:checked ~ a {
+                        &:checked ~ .buttons {
                             transform: none;
                         }
                     }
@@ -105,17 +105,17 @@ header {
                     justify-content: end;
 
                     @media(@hamburgerMenu) {
-                        display: block;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
                         position: absolute;
-                        width: 300px;
-                        margin: -100px 0 0 55px;
+                        width: 100vw;
+                        margin: -100px 0 0 -164%;
                         padding: 50px;
                         padding-top: 125px;
-                        background: #85b3a8;
-                        transform-origin: 0% 0%;
+                        background: linear-gradient(0deg, rgba(163,190,179,1) 0%, rgba(255,255,255,1) 100%);
                         transform: translate(100%, 0);
-                        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-
+                        transition: transform 0.8s cubic-bezier(0.77,0.2,0.05,1.0);
                     }
                 }
                 
@@ -129,8 +129,8 @@ header {
 
 
                         @media(@hamburgerMenu) {
-                            color: black;
-                            text-decoration: underline;
+                            .buttonStyle();
+                            text-align: center;
                         }
                         
                     &:hover {
@@ -139,7 +139,7 @@ header {
                         transition: 0.3s ease;
 
                         @media(@hamburgerMenu) {
-                            color: white;
+                            color: @accentColor;
                         }
                     }
             }
