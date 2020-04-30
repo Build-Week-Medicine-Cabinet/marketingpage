@@ -839,6 +839,9 @@ header nav .nav-logo {
     margin-bottom: 10%;
   }
 }
+.strainsSection .sativa .strainsTextSection {
+  width: 100%;
+}
 .strainsSection .sativa .strainsTextSection h2 {
   margin-bottom: 1%;
 }
