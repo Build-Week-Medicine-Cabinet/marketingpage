@@ -22,11 +22,24 @@
 
     p {
         margin: 5px;
+
+        @media @mobile {
+            font-size: 1.5rem;
+        }
     }
 
     button {
         .buttonStyle(20%);
+
+        @media @mobile {
+            width: 30%;
+        }
     } 
+
+    @media @mobile {
+        line-height: 1.5rem;
+    }
+
 }
 
 // Call to Action
@@ -38,12 +51,16 @@
 
     button {
         .buttonStyle();
+
+        @media @mobile {
+            width: 30%;
+        }
     }
     
     p {
         margin: 1%;
 
-        @media(@tabletBP) {
+        @media @tabletBP {
             text-align: center;
         }
     }
@@ -59,7 +76,7 @@
     align-items: center;
     margin: 0 auto;
 
-    @media(@tabletBP) {
+    @media @tabletBP {
         flex-direction: column;
     }
 
@@ -68,19 +85,23 @@
         width: 45%;
         margin: 2%;
 
-        @media(@tabletBP) {
+        @media @tabletBP {
             width: 70%;
+        }
+
+        @media @mobile {
+            width: 90%;
         }
     }
 
     p, h2 {
         margin: 20px 0;
         
-        @media(@tablet) {
+        @media @tablet {
             margin-right: 20%;
         }
 
-        @media(@tabletBP) {
+        @media @tabletBP {
             margin: 0;
             text-align: center;
         }
@@ -89,14 +110,29 @@
     .aboutImage {
         display: flex;
         justify-content: center;
+
+                
+        img {
+            @media @mobile {
+                width: 400px;
+                height: 350px;
+            }
+        }
+
     }
+
+
 
     button {
         .buttonStyle();
         margin-top: 10px;
 
-        @media(@tablet) {
+        @media @tablet {
             width: 20%;
+        }
+
+        @media @mobile {
+            width: 30%;
         }
     }
 
@@ -112,7 +148,7 @@
     align-items: center;
     margin: 0 auto;
 
-    @media(@tabletBP) {
+    @media @tabletBP {
         flex-direction: column;
     }
 
@@ -120,19 +156,23 @@
         width: 45%;
         margin: 2%;
 
-        @media(@tabletBP) {
+        @media @tabletBP {
             width: 70%;
+        }
+
+        @media @mobile {
+            width: 90%;
         }
     }
 
     p, h2{
         margin: 20px;
 
-        @media(@tablet) {
+        @media @tablet {
             margin-left: 20%;
         }
 
-        @media(@tabletBP) {
+        @media @tabletBP {
             margin: 0;
             text-align: center;
         }
@@ -141,14 +181,27 @@
     .contactImage {
         display: flex;
         justify-content: center;
+
+            
+        img {
+            @media @mobile {
+                width: 400px;
+                height: 350px;
+            }
+        }
     }
+
 
     button {
         .buttonStyle();
         margin-top: 10px;
 
-        @media(@tablet) {
+        @media @tablet {
             width: 20%;
+        }
+
+        @media @mobile {
+            width: 30%;
         }
     }
 }
