@@ -529,6 +529,16 @@ header nav .nav-logo {
   border-bottom: 2px double #ff999c;
   width: 60%;
 }
+@media (max-width: 800px) {
+  .bigContainer .aboutUs-main {
+    margin-top: 6%;
+  }
+}
+@media (max-width: 500px) {
+  .bigContainer .aboutUs-main {
+    margin-top: 10%;
+  }
+}
 .bigContainer .aboutUs-main h1 {
   display: flex;
   align-self: center;
@@ -555,6 +565,12 @@ header nav .nav-logo {
   flex-grow: initial;
   justify-content: stretch;
 }
+@media (max-width: 800px) {
+  .bigContainer .gallery .personShowcase {
+    width: 50%;
+    margin-bottom: 3%;
+  }
+}
 .bigContainer .gallery .personShowcase img {
   width: 20rem;
   border-radius: 50%;
@@ -580,6 +596,11 @@ header nav .nav-logo {
   .bigContainer .gallery .personShowcase p {
     width: 50%;
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .bigContainer .gallery .personShowcase p {
+    width: 60%;
   }
 }
 .bigContainer .gallery .personShowcase p a {
