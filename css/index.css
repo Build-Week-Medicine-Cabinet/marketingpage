@@ -413,7 +413,7 @@ header nav .nav-logo {
 }
 @media (max-width: 500px) {
   .home-hero button {
-    width: 30%;
+    width: 40%;
   }
 }
 @media (max-width: 500px) {
@@ -426,6 +426,7 @@ header nav .nav-logo {
   flex-direction: column;
   align-items: center;
   margin: 2%;
+  text-align: center;
 }
 .cta button {
   width: 15%;
@@ -442,7 +443,7 @@ header nav .nav-logo {
 }
 @media (max-width: 500px) {
   .cta button {
-    width: 30%;
+    width: 40%;
   }
 }
 .cta p {
@@ -459,6 +460,7 @@ header nav .nav-logo {
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
+  text-align: center;
 }
 @media (max-width: 1010px) {
   .about {
@@ -466,7 +468,7 @@ header nav .nav-logo {
   }
 }
 .about div {
-  width: 45%;
+  width: 40%;
   margin: 2%;
 }
 @media (max-width: 1010px) {
@@ -499,15 +501,16 @@ header nav .nav-logo {
 .about .aboutImage {
   display: flex;
   justify-content: center;
+  align-items: baseline;
 }
 @media (max-width: 500px) {
   .about .aboutImage img {
     width: 400px;
-    height: 350px;
+    height: 300px;
   }
 }
 .about button {
-  width: 15%;
+  width: 30%;
   padding: 1%;
   font-family: 'Montserrat', sans-serrif;
   color: white;
@@ -527,7 +530,7 @@ header nav .nav-logo {
 }
 @media (max-width: 500px) {
   .about button {
-    width: 30%;
+    width: 40%;
   }
 }
 .contact-intro {
@@ -535,6 +538,7 @@ header nav .nav-logo {
   flex-direction: row-reverse;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
   align-items: center;
   margin: 0 auto;
 }
@@ -544,7 +548,7 @@ header nav .nav-logo {
   }
 }
 .contact-intro div {
-  width: 45%;
+  width: 40%;
   margin: 2%;
 }
 @media (max-width: 1010px) {
@@ -577,11 +581,12 @@ header nav .nav-logo {
 .contact-intro .contactImage {
   display: flex;
   justify-content: center;
+  align-items: baseline;
 }
 @media (max-width: 500px) {
   .contact-intro .contactImage img {
     width: 400px;
-    height: 350px;
+    height: 300px;
   }
 }
 .contact-intro button {
@@ -605,7 +610,7 @@ header nav .nav-logo {
 }
 @media (max-width: 500px) {
   .contact-intro button {
-    width: 30%;
+    width: 40%;
   }
 }
 .bigContainer .aboutUs-main {
