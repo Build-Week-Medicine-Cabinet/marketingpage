@@ -32,7 +32,8 @@
         .buttonStyle(20%);
 
         @media @mobile {
-            width: 30%;
+
+            width: 40%;
         }
     } 
 
@@ -48,12 +49,15 @@
     flex-direction: column;
     align-items: center;
     margin: 2%;
+    text-align: center;
 
     button {
         .buttonStyle();
 
         @media @mobile {
-            width: 30%;
+
+            width: 40%;
+
         }
     }
     
@@ -75,6 +79,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
+    text-align: center;
 
     @media @tabletBP {
         flex-direction: column;
@@ -82,7 +87,7 @@
 
 
     div {
-        width: 45%;
+        width: 40%;
         margin: 2%;
 
         @media @tabletBP {
@@ -111,11 +116,14 @@
         display: flex;
         justify-content: center;
 
+        align-items: baseline;
+
+
                 
         img {
             @media @mobile {
                 width: 400px;
-                height: 350px;
+                height: 300px;
             }
         }
 
@@ -124,7 +132,7 @@
 
 
     button {
-        .buttonStyle();
+        .buttonStyle(30%);
         margin-top: 10px;
 
         @media @tablet {
@@ -132,7 +140,9 @@
         }
 
         @media @mobile {
-            width: 30%;
+
+            width: 40%;
+
         }
     }
 
@@ -145,6 +155,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
     align-items: center;
     margin: 0 auto;
 
@@ -153,7 +164,7 @@
     }
 
     div {
-        width: 45%;
+        width: 40%;
         margin: 2%;
 
         @media @tabletBP {
@@ -182,11 +193,13 @@
         display: flex;
         justify-content: center;
 
+        align-items: baseline;
+
             
         img {
             @media @mobile {
                 width: 400px;
-                height: 350px;
+                height: 300px;
             }
         }
     }
@@ -201,7 +214,9 @@
         }
 
         @media @mobile {
-            width: 30%;
+
+            width: 40%;
+
         }
     }
 }
