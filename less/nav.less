@@ -14,7 +14,7 @@ header {
             padding: 1.5rem;
             border-bottom: 2px solid @accentColor;
 
-            @media(@tabletBP) {
+            @media @tabletBP {
                 position: fixed;
                 top: 0;
                 z-index: 1;
@@ -30,7 +30,7 @@ header {
                 justify-content: flex-end;
                 width: 60%;
 
-                @media(@hamburgerMenu) {
+                @media @hamburgerMenu {
                     display: inline-block;
                     position: relative;
                     top: 3px;
@@ -41,7 +41,7 @@ header {
                 input {
                     opacity: 0%;
 
-                    @media(@hamburgerMenu) {
+                    @media @hamburgerMenu {
                         display: block;
                         width: 40px;
                         height: 32px;
@@ -76,7 +76,7 @@ header {
 
                 span {
 
-                    @media(@hamburgerMenu) {
+                    @media @hamburgerMenu {
                         display: block;
                         width: 33px;
                         height: 4px;
@@ -104,7 +104,7 @@ header {
                     width: 100%;
                     justify-content: end;
 
-                    @media(@hamburgerMenu) {
+                    @media @hamburgerMenu {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -127,7 +127,7 @@ header {
                     color: @mainColor;
                     display: inline-block;
 
-                        @media(@hamburgerMenu) {
+                        @media @hamburgerMenu {
                             .buttonStyle();
                             text-align: center;
                         }
@@ -137,7 +137,7 @@ header {
                         transform: translate(0, -8px);
                         transition: 0.3s ease;
 
-                        @media(@hamburgerMenu) {
+                        @media @hamburgerMenu {
                             color: @accentColor;
                         }
                     }
@@ -146,7 +146,7 @@ header {
             p{
                 font-size: 4rem;
 
-                @media(@hamburgerMenu) {
+                @media @hamburgerMenu {
                     opacity: 0%;
                 }
             }
