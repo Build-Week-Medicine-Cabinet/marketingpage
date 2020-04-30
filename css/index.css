@@ -798,12 +798,12 @@ header nav .nav-logo {
 }
 @media (max-width: 500px) {
   .strains-hero {
-    margin-top: 15%;
+    margin-top: 25%;
   }
 }
 .strains-hero h1 {
   font-size: 5rem;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
 }
 @media (max-width: 500px) {
   .strains-hero p {
@@ -873,11 +873,6 @@ header nav .nav-logo {
 @media (max-width: 500px) {
   .strainsSection .sativa .strainsTextSection p {
     margin-bottom: 8%;
-  }
-}
-@media (max-width: 500px) {
-  .strainsSection .sativa .strainsTextSection p {
-    margin-bottom: 8%;
     text-align: center;
   }
 }
@@ -894,11 +889,7 @@ header nav .nav-logo {
 @media (max-width: 500px) {
   .strainsSection .sativa img {
     margin-bottom: 5%;
-  }
-}
-@media (max-width: 500px) {
-  .strainsSection .sativa img {
-    margin-bottom: 5%;
+    width: 40rem;
   }
 }
 .strainsSection .indica {
@@ -937,20 +928,19 @@ header nav .nav-logo {
     text-align: center;
   }
 }
-@media (max-width: 500px) {
-  .strainsSection .indica .strainsTextSection h2 {
-    text-align: center;
-  }
-}
 .strainsSection .indica .strainsTextSection p {
   padding-left: 5%;
-  margin-bottom: 8%;
 }
 @media (max-width: 1255px) {
   .strainsSection .indica .strainsTextSection p {
     padding: 0;
     margin-bottom: 5%;
     text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .strainsSection .indica .strainsTextSection p {
+    margin-bottom: 8%;
   }
 }
 .strainsSection img {
@@ -961,6 +951,11 @@ header nav .nav-logo {
   .strainsSection img {
     width: 45rem;
     margin-bottom: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .strainsSection img {
+    width: 40rem;
   }
 }
 .hybrid {
@@ -997,11 +992,6 @@ header nav .nav-logo {
     text-align: center;
   }
 }
-@media (max-width: 500px) {
-  .hybrid .strainsTextSection {
-    text-align: center;
-  }
-}
 .hybrid .strainsTextSection p {
   padding-right: 5%;
 }
@@ -1019,12 +1009,16 @@ header nav .nav-logo {
 }
 .hybrid img {
   width: 60rem;
-  height: auto;
 }
 @media (max-width: 1255px) {
   .hybrid img {
     width: 45rem;
     margin-bottom: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .hybrid img {
+    width: 40rem;
   }
 }
 footer {
