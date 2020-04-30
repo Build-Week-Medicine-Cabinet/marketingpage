@@ -325,7 +325,7 @@ header nav .links a {
   margin: 0.6rem;
   text-decoration: none;
   font-size: 1.8rem;
-  padding: 1%;
+  padding: 0 1%;
   color: #2d9c79;
   display: inline-block;
 }
@@ -414,6 +414,7 @@ header nav .nav-logo {
 @media (max-width: 500px) {
   .home-hero button {
     width: 40%;
+
   }
 }
 @media (max-width: 500px) {
@@ -444,6 +445,7 @@ header nav .nav-logo {
 @media (max-width: 500px) {
   .cta button {
     width: 40%;
+
   }
 }
 .cta p {
@@ -509,6 +511,12 @@ header nav .nav-logo {
     height: 300px;
   }
 }
+@media (max-width: 500px) {
+  .about .aboutImage img {
+    width: 400px;
+    height: 350px;
+  }
+}
 .about button {
   width: 30%;
   padding: 1%;
@@ -531,6 +539,7 @@ header nav .nav-logo {
 @media (max-width: 500px) {
   .about button {
     width: 40%;
+
   }
 }
 .contact-intro {
@@ -587,6 +596,12 @@ header nav .nav-logo {
   .contact-intro .contactImage img {
     width: 400px;
     height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .contact-intro .contactImage img {
+    width: 400px;
+    height: 350px;
   }
 }
 .contact-intro button {
@@ -783,6 +798,23 @@ header nav .nav-logo {
   flex-direction: column;
   align-items: center;
   margin: 2% 0 5% 0;
+  text-align: center;
+  line-height: 2.2rem;
+}
+@media (max-width: 1255px) {
+  .strains-hero {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 800px) {
+  .strains-hero {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .strains-hero {
+    margin-top: 15%;
+  }
 }
 @media (max-width: 1255px) {
   .strains-hero {
@@ -818,7 +850,7 @@ header nav .nav-logo {
     font-size: 6rem;
     align-items: center;
     text-align: center;
-    margin: 2% 0 2% 0;
+    margin: 2% 0 0 0;
   }
 }
 .strainsSection .sativa {
@@ -840,6 +872,14 @@ header nav .nav-logo {
 .strainsSection .sativa .strainsTextSection h2 {
   margin-bottom: 1%;
 }
+
+@media (max-width: 1255px) {
+  .strainsSection .sativa .strainsTextSection h2 {
+    margin-top: 5%;
+    text-align: center;
+  }
+}
+
 @media (max-width: 500px) {
   .strainsSection .sativa .strainsTextSection {
     text-align: center;
@@ -851,6 +891,12 @@ header nav .nav-logo {
 @media (max-width: 1255px) {
   .strainsSection .sativa .strainsTextSection p {
     margin-bottom: 5%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .strainsSection .sativa .strainsTextSection p {
+    margin-bottom: 8%;
   }
 }
 @media (max-width: 500px) {
@@ -865,7 +911,13 @@ header nav .nav-logo {
 }
 @media (max-width: 1255px) {
   .strainsSection .sativa img {
-    width: 30rem;
+    width: 45rem;
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .strainsSection .sativa img {
+    margin-bottom: 5%;
   }
 }
 @media (max-width: 500px) {
@@ -890,6 +942,9 @@ header nav .nav-logo {
     margin-bottom: 10%;
   }
 }
+.strainsSection .indica .strainsTextSection {
+  margin-top: 2%;
+}
 .strainsSection .indica .strainsTextSection h2 {
   padding-left: 5%;
   margin-bottom: 1%;
@@ -897,6 +952,13 @@ header nav .nav-logo {
 @media (max-width: 1255px) {
   .strainsSection .indica .strainsTextSection h2 {
     padding: 0;
+    margin-top: 5%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .strainsSection .indica .strainsTextSection h2 {
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
@@ -911,11 +973,16 @@ header nav .nav-logo {
   .strainsSection .indica .strainsTextSection p {
     padding: 0;
     margin-bottom: 5%;
+
+    text-align: center;
+
   }
 }
 @media (max-width: 500px) {
   .strainsSection .indica .strainsTextSection p {
+
     text-align: center;
+
     margin-bottom: 8%;
   }
 }
@@ -925,7 +992,8 @@ header nav .nav-logo {
 }
 @media (max-width: 1255px) {
   .strainsSection .indica img {
-    width: 30rem;
+    width: 45rem;
+    margin-bottom: 3%;
   }
 }
 .strainsSection .hybrid {
@@ -945,9 +1013,20 @@ header nav .nav-logo {
     margin-bottom: 10%;
   }
 }
+.strainsSection .hybrid .strainsTextSection {
+  margin-top: 2%;
+}
 .strainsSection .hybrid .strainsTextSection h2 {
   margin-bottom: 1%;
 }
+
+@media (max-width: 1255px) {
+  .strainsSection .hybrid .strainsTextSection h2 {
+    margin-top: 5%;
+    text-align: center;
+  }
+}
+
 @media (max-width: 500px) {
   .strainsSection .hybrid .strainsTextSection {
     text-align: center;
@@ -958,12 +1037,16 @@ header nav .nav-logo {
 }
 @media (max-width: 1255px) {
   .strainsSection .hybrid .strainsTextSection p {
+
+    text-align: center;
+
     margin-bottom: 5%;
   }
 }
 @media (max-width: 500px) {
   .strainsSection .hybrid .strainsTextSection p {
     text-align: center;
+
     margin-bottom: 8%;
   }
 }
@@ -973,7 +1056,8 @@ header nav .nav-logo {
 }
 @media (max-width: 1255px) {
   .strainsSection .hybrid img {
-    width: 30rem;
+    width: 45rem;
+    margin-bottom: 3%;
   }
 }
 footer {
@@ -984,7 +1068,11 @@ footer {
   align-items: center;
   height: 16.5vh;
 }
+
+@media (max-width: 1255px) {
+
 @media (max-width: 500px) {
+
   footer {
     height: 12vh;
   }
