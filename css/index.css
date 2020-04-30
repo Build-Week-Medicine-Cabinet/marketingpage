@@ -512,7 +512,8 @@ header nav .nav-logo {
 }
 @media (max-width: 500px) {
   .bigContainer .aboutUs-main {
-    margin-top: 10%;
+    margin-top: 11%;
+    width: 100%;
   }
 }
 .bigContainer .aboutUs-main h1 {
@@ -524,6 +525,11 @@ header nav .nav-logo {
 .bigContainer .aboutUs-main p {
   line-height: 2.8rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .bigContainer .aboutUs-main p {
+    margin: 3%;
+  }
 }
 .bigContainer .gallery {
   display: flex;
@@ -547,6 +553,16 @@ header nav .nav-logo {
     margin-bottom: 3%;
   }
 }
+@media (max-width: 500px) {
+  .bigContainer .gallery .personShowcase {
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 2%;
+  }
+  .bigContainer .gallery .personShowcase:not(:last-child) {
+    border-bottom: 1px solid #ff999c;
+  }
+}
 .bigContainer .gallery .personShowcase img {
   width: 20rem;
   border-radius: 50%;
@@ -554,6 +570,11 @@ header nav .nav-logo {
 @media (max-width: 1255px) {
   .bigContainer .gallery .personShowcase img {
     width: 15rem;
+  }
+}
+@media (max-width: 500px) {
+  .bigContainer .gallery .personShowcase img {
+    width: 10rem;
   }
 }
 .bigContainer .gallery .personShowcase h3 {
@@ -577,6 +598,11 @@ header nav .nav-logo {
 @media (max-width: 800px) {
   .bigContainer .gallery .personShowcase p {
     width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .bigContainer .gallery .personShowcase p {
+    width: 100%;
   }
 }
 .bigContainer .gallery .personShowcase p a {
@@ -641,9 +667,29 @@ header nav .nav-logo {
   align-items: center;
   margin: 2% 0 5% 0;
 }
+@media (max-width: 1255px) {
+  .strains-hero {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 800px) {
+  .strains-hero {
+    margin-top: 8%;
+  }
+}
+@media (max-width: 500px) {
+  .strains-hero {
+    margin-top: 15%;
+  }
+}
 .strains-hero h1 {
   font-size: 5rem;
   margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .strains-hero p {
+    text-align: center;
+  }
 }
 .mdash {
   display: none;
@@ -669,8 +715,18 @@ header nav .nav-logo {
     margin-bottom: 2%;
   }
 }
+@media (max-width: 500px) {
+  .strainsSection .sativa {
+    margin-bottom: 10%;
+  }
+}
 .strainsSection .sativa .strainsTextSection h2 {
   margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .strainsSection .sativa .strainsTextSection {
+    text-align: center;
+  }
 }
 .strainsSection .sativa .strainsTextSection p {
   padding-right: 5%;
@@ -678,6 +734,12 @@ header nav .nav-logo {
 @media (max-width: 1255px) {
   .strainsSection .sativa .strainsTextSection p {
     margin-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .strainsSection .sativa .strainsTextSection p {
+    margin-bottom: 8%;
+    text-align: center;
   }
 }
 .strainsSection .sativa img {
@@ -689,6 +751,11 @@ header nav .nav-logo {
     width: 30rem;
   }
 }
+@media (max-width: 500px) {
+  .strainsSection .sativa img {
+    margin-bottom: 5%;
+  }
+}
 .strainsSection .indica {
   display: flex;
   flex-direction: row-reverse;
@@ -698,6 +765,12 @@ header nav .nav-logo {
 @media (max-width: 1255px) {
   .strainsSection .indica {
     flex-direction: column;
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .strainsSection .indica {
+    margin-bottom: 10%;
   }
 }
 .strainsSection .indica .strainsTextSection h2 {
@@ -709,12 +782,24 @@ header nav .nav-logo {
     padding: 0;
   }
 }
+@media (max-width: 500px) {
+  .strainsSection .indica .strainsTextSection h2 {
+    text-align: center;
+  }
+}
 .strainsSection .indica .strainsTextSection p {
   padding-left: 5%;
 }
 @media (max-width: 1255px) {
   .strainsSection .indica .strainsTextSection p {
     padding: 0;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .strainsSection .indica .strainsTextSection p {
+    text-align: center;
+    margin-bottom: 8%;
   }
 }
 .strainsSection .indica img {
@@ -735,13 +820,35 @@ header nav .nav-logo {
 @media (max-width: 1255px) {
   .strainsSection .hybrid {
     flex-direction: column;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .strainsSection .hybrid {
+    margin-bottom: 10%;
   }
 }
 .strainsSection .hybrid .strainsTextSection h2 {
   margin-bottom: 1%;
 }
+@media (max-width: 500px) {
+  .strainsSection .hybrid .strainsTextSection {
+    text-align: center;
+  }
+}
 .strainsSection .hybrid .strainsTextSection p {
   padding-right: 5%;
+}
+@media (max-width: 1255px) {
+  .strainsSection .hybrid .strainsTextSection p {
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .strainsSection .hybrid .strainsTextSection p {
+    text-align: center;
+    margin-bottom: 8%;
+  }
 }
 .strainsSection .hybrid img {
   width: 60rem;
@@ -773,6 +880,11 @@ footer {
   justify-content: center;
   align-items: center;
   height: 16.5vh;
+}
+@media (max-width: 500px) {
+  footer {
+    height: 12vh;
+  }
 }
 footer address {
   justify-content: center;
