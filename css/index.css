@@ -543,6 +543,7 @@ header nav .nav-logo {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin: 2% 0;
 }
 .bigContainer .gallery .personShowcase {
   display: flex;
@@ -558,6 +559,11 @@ header nav .nav-logo {
   width: 20rem;
   border-radius: 50%;
 }
+@media (max-width: 1255px) {
+  .bigContainer .gallery .personShowcase img {
+    width: 15rem;
+  }
+}
 .bigContainer .gallery .personShowcase h3 {
   text-align: center;
   margin: 2% 0 2% 0;
@@ -569,6 +575,12 @@ header nav .nav-logo {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+@media (max-width: 1255px) {
+  .bigContainer .gallery .personShowcase p {
+    width: 50%;
+    font-size: 1.5rem;
+  }
 }
 .bigContainer .gallery .personShowcase p a {
   text-decoration: none;
@@ -633,7 +645,7 @@ header nav .nav-logo {
   margin: 2% 0 5% 0;
 }
 .strains-hero h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 2%;
 }
 .mdash {
