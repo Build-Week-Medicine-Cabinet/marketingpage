@@ -182,6 +182,17 @@ header {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .main-logo {
+    width: 75%;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 370px) {
+  header .main-logo {
+    margin-top: 10%;
+  }
+}
 header nav {
   display: flex;
   flex-direction: row-reverse;
@@ -216,6 +227,16 @@ header nav .links {
     top: 3px;
     left: 55%;
     z-index: 1;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  header nav .links {
+    left: 45%;
+  }
+}
+@media (max-width: 800px) and (max-width: 370px) {
+  header nav .links {
+    left: 30%;
   }
 }
 header nav .links input {
@@ -314,6 +335,11 @@ header nav .links a {
     transition: 0.4s ease;
   }
 }
+@media (max-width: 500px) {
+  header nav .links a {
+    width: 30%;
+  }
+}
 header nav .links a:hover {
   color: #ff999c;
   transform: translate(0, -8px);
@@ -334,6 +360,11 @@ header nav .links p {
 }
 header nav .nav-logo {
   height: 7rem;
+}
+@media (max-width: 500px) {
+  header nav .nav-logo {
+    height: 6.7rem;
+  }
 }
 .home-hero {
   display: flex;
@@ -357,6 +388,11 @@ header nav .nav-logo {
 .home-hero p {
   margin: 5px;
 }
+@media (max-width: 500px) {
+  .home-hero p {
+    font-size: 1.5rem;
+  }
+}
 .home-hero button {
   width: 20%;
   padding: 1%;
@@ -369,6 +405,16 @@ header nav .nav-logo {
   background-color: white;
   color: #0c486c;
   transition: 0.4s ease;
+}
+@media (max-width: 500px) {
+  .home-hero button {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .home-hero {
+    line-height: 1.5rem;
+  }
 }
 .cta {
   display: flex;
@@ -388,6 +434,11 @@ header nav .nav-logo {
   background-color: white;
   color: #0c486c;
   transition: 0.4s ease;
+}
+@media (max-width: 500px) {
+  .cta button {
+    width: 30%;
+  }
 }
 .cta p {
   margin: 1%;
@@ -418,6 +469,11 @@ header nav .nav-logo {
     width: 70%;
   }
 }
+@media (max-width: 500px) {
+  .about div {
+    width: 90%;
+  }
+}
 .about p,
 .about h2 {
   margin: 20px 0;
@@ -439,6 +495,12 @@ header nav .nav-logo {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .about .aboutImage img {
+    width: 400px;
+    height: 350px;
+  }
+}
 .about button {
   width: 15%;
   padding: 1%;
@@ -456,6 +518,11 @@ header nav .nav-logo {
 @media (max-width: 1255px) {
   .about button {
     width: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .about button {
+    width: 30%;
   }
 }
 .contact-intro {
@@ -480,6 +547,11 @@ header nav .nav-logo {
     width: 70%;
   }
 }
+@media (max-width: 500px) {
+  .contact-intro div {
+    width: 90%;
+  }
+}
 .contact-intro p,
 .contact-intro h2 {
   margin: 20px;
@@ -501,6 +573,12 @@ header nav .nav-logo {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .contact-intro .contactImage img {
+    width: 400px;
+    height: 350px;
+  }
+}
 .contact-intro button {
   width: 15%;
   padding: 1%;
@@ -518,6 +596,11 @@ header nav .nav-logo {
 @media (max-width: 1255px) {
   .contact-intro button {
     width: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .contact-intro button {
+    width: 30%;
   }
 }
 .bigContainer .aboutUs-main {
@@ -622,7 +705,7 @@ header nav .nav-logo {
 }
 @media ((max-width: 1010px)) {
   .forms {
-    height: 90vh;
+    height: 85vh;
   }
 }
 .forms .title {

@@ -22,11 +22,24 @@
 
     p {
         margin: 5px;
+
+        @media @mobile {
+            font-size: 1.5rem;
+        }
     }
 
     button {
         .buttonStyle(20%);
+
+        @media @mobile {
+            width: 30%;
+        }
     } 
+
+    @media @mobile {
+        line-height: 1.5rem;
+    }
+
 }
 
 // Call to Action
@@ -38,6 +51,10 @@
 
     button {
         .buttonStyle();
+
+        @media @mobile {
+            width: 30%;
+        }
     }
     
     p {
@@ -71,6 +88,10 @@
         @media @tabletBP {
             width: 70%;
         }
+
+        @media @mobile {
+            width: 90%;
+        }
     }
 
     p, h2 {
@@ -89,7 +110,18 @@
     .aboutImage {
         display: flex;
         justify-content: center;
+
+                
+        img {
+            @media @mobile {
+                width: 400px;
+                height: 350px;
+            }
+        }
+
     }
+
+
 
     button {
         .buttonStyle();
@@ -97,6 +129,10 @@
 
         @media @tablet {
             width: 20%;
+        }
+
+        @media @mobile {
+            width: 30%;
         }
     }
 
@@ -123,6 +159,10 @@
         @media @tabletBP {
             width: 70%;
         }
+
+        @media @mobile {
+            width: 90%;
+        }
     }
 
     p, h2{
@@ -141,7 +181,16 @@
     .contactImage {
         display: flex;
         justify-content: center;
+
+            
+        img {
+            @media @mobile {
+                width: 400px;
+                height: 350px;
+            }
+        }
     }
+
 
     button {
         .buttonStyle();
@@ -149,6 +198,10 @@
 
         @media @tablet {
             width: 20%;
+        }
+
+        @media @mobile {
+            width: 30%;
         }
     }
 }
