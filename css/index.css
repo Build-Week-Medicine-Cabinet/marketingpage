@@ -318,7 +318,7 @@ header nav .links .buttons {
 }
 @media (max-width: 800px) and (max-width: 380px) {
   header nav .links .buttons {
-    margin: -100px 0 0 -220%;
+    margin: -100px 0 0 -170%;
   }
 }
 header nav .links a {
@@ -343,11 +343,6 @@ header nav .links a {
     background-color: white;
     color: #0c486c;
     transition: 0.4s ease;
-  }
-}
-@media (max-width: 500px) {
-  header nav .links a {
-    width: 30%;
   }
 }
 header nav .links a:hover {
