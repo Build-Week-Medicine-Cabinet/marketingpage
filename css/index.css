@@ -188,7 +188,7 @@ header {
     margin-top: 5%;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   header .main-logo {
     margin-top: 10%;
   }
@@ -234,7 +234,7 @@ header nav .links {
     left: 45%;
   }
 }
-@media (max-width: 800px) and (max-width: 370px) {
+@media (max-width: 800px) and (max-width: 380px) {
   header nav .links {
     left: 30%;
   }
@@ -311,6 +311,16 @@ header nav .links .buttons {
     transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 }
+@media (max-width: 800px) and (max-width: 500px) {
+  header nav .links .buttons {
+    margin: -100px 0 0 -157%;
+  }
+}
+@media (max-width: 800px) and (max-width: 380px) {
+  header nav .links .buttons {
+    margin: -100px 0 0 -220%;
+  }
+}
 header nav .links a {
   margin: 0.6rem;
   text-decoration: none;
@@ -321,7 +331,7 @@ header nav .links a {
 }
 @media (max-width: 800px) {
   header nav .links a {
-    width: 15%;
+    width: 30%;
     padding: 1%;
     font-family: 'Montserrat', sans-serrif;
     color: white;
