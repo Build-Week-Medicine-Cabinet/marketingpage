@@ -217,7 +217,6 @@ header nav {
 header nav .links {
   display: flex;
   justify-content: flex-end;
-  width: 60%;
   white-space: nowrap;
 }
 @media (max-width: 800px) {
@@ -227,6 +226,7 @@ header nav .links {
     top: 3px;
     left: 55%;
     z-index: 1;
+    width: 60%;
   }
 }
 @media (max-width: 800px) and (max-width: 500px) {
@@ -322,10 +322,9 @@ header nav .links .buttons {
   }
 }
 header nav .links a {
-  margin: 0.6rem 1%;
+  margin: 0.6rem 2%;
   text-decoration: none;
   font-size: 1.8rem;
-  padding: 0 1%;
   color: #2d9c79;
   display: inline-block;
 }
