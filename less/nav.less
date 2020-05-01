@@ -39,15 +39,15 @@ header {
             .links {
                 display: flex;
                 justify-content: flex-end;
-                width: 60%;
                 white-space: nowrap;
-                
+
                 @media @hamburgerMenu {
                     display: inline-block;
                     position: relative;
                     top: 3px;
                     left: 55%;
                     z-index: 1;
+                    width: 60%;
 
                     @media @mobile {
                         left: 45%;
@@ -124,6 +124,7 @@ header {
                     width: 100%;
                     justify-content: end;
 
+
                     @media @hamburgerMenu {
                         display: flex;
                         flex-direction: column;
@@ -148,10 +149,9 @@ header {
                 }
                 
                 a {
-                    margin: .6rem 1%;
+                    margin: .6rem 2%;
                     text-decoration: none;
                     font-size: 1.8rem;
-                    padding: 0 1%;
                     color: @mainColor;
                     display: inline-block;
 
